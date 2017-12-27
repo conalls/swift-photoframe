@@ -121,3 +121,13 @@ UIView즉 View는 빌딩의 기초 벽돌과 같다. 나의 앱에서, 유저들
 * 다음 버튼을 누를때마다, 이미지가 랜덤하게 보여진다. 
 * Sring format 을 적극 활용하자.
 [String format](https://stackoverflow.com/questions/25566581/leading-zeros-for-int-in-swift)
+
+## UIImagePickerController step8
+* UIImagePickerController를 사용하기위해 delegate protocol 채택하였다. 필수는 UINavigationControllerDelegate & UIImagePickerControllerDelegate가 필요하다. 그리고, 선택한 이미지를 내가 원하는 UIImage에 뿌려주려면 ```func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) ```를 정의해줘야한다.
+
+* UIImagePickerController처럼 이미 만들어놓은 시스템 컨트롤러들에 대해 학습한다.
+
+**System View Controllers<br>**
+Use the built-in UIKit view controllers to pick images, edit videos, share content, print files, and much more.
+![step8-1](./ScreenShot/step8-1.png)
+![step8-2](./ScreenShot/step8-2.png)
